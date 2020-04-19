@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>back-arrow@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Explore-Detail" transform="translate(-33.000000, -57.000000)" stroke="#FFFFFF">
+            <g id="Detail-Top-Bar" transform="translate(34.000000, 58.000000)">
+                <g id="Back-Arrow-Icon/White">
+                    <g id="arrow-left-circle">
+                        <circle id="Oval" stroke-width="2" cx="17" cy="17" r="17"></circle>
+                        <polyline id="Path" stroke-width="2" points="17 11 10 17.5 17 24"></polyline>
+                        <line x1="24" y1="17.5" x2="11" y2="17.5" id="Path" stroke-width="2"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

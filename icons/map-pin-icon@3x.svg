@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="17px" viewBox="0 0 14 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>map-pin-icon@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Map-Pin" transform="translate(1.000000, 1.000000)" stroke="#000000">
+            <g id="map-pin-icon">
+                <path d="M12,6.13636358 C12,10.9090909 6,15 6,15 C6,15 0,10.9090909 0,6.13636358 C0,2.74734354 2.68629154,0 6,0 C9.31370846,0 12,2.74734354 12,6.13636358 L12,6.13636358 Z" id="Path"></path>
+                <circle id="Oval" cx="6" cy="6" r="2"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>edit-button@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Account" transform="translate(-311.000000, -221.000000)">
+            <g id="Edit-Button" transform="translate(311.000000, 221.000000)">
+                <g>
+                    <g>
+                        <circle id="Oval" fill="#2C6AD8" cx="17.5" cy="17.5" r="17.5"></circle>
+                        <g id="Edit-Icon" transform="translate(8.936170, 8.936170)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                            <g id="edit-2">
+                                <path d="M12.9568552,0.715643024 C13.5740603,0.0984378748 14.4736564,-0.142608181 15.3167743,0.0833045759 C16.1598922,0.309217332 16.8184422,0.967767378 17.044355,1.81088528 C17.2702678,2.65400318 17.0292217,3.55359927 16.4120166,4.1708044 L4.7508469,15.8319741 L0,17.1276596 L1.29568552,12.3768127 L12.9568552,0.715643024 Z" id="Path" stroke-width="2"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

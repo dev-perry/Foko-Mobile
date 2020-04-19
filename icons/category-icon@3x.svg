@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="15px" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Category Icon@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Category-Icon" transform="translate(1.000000, 0.000000)" stroke="#000000">
+            <g id="Rectangle">
+                <rect x="0" y="0.5" width="6" height="5.76470588"></rect>
+                <rect x="8" y="0.5" width="6" height="5.76470588"></rect>
+                <rect x="8" y="8.73529412" width="6" height="5.76470588"></rect>
+                <rect x="0" y="8.73529412" width="6" height="5.76470588"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

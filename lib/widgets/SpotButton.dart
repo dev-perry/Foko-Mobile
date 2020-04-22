@@ -2,7 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:foko/screens/action.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class SpotButton extends StatelessWidget {
+class SpotButton extends StatefulWidget {
+  @override
+  _SpotButtonState createState() => _SpotButtonState();
+}
+
+class _SpotButtonState extends State<SpotButton> {
+  var position;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(

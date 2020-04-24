@@ -12,5 +12,9 @@ var loanDoc = await loanDB.document(id).get().then((f)=> f.data);
 return loanDoc;
 }
 
+Stream allLoans(){
+  return loanDB.snapshots();
+}
+
 }
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foko/functions/database.dart';
+import 'package:foko/views/explore_detail.dart';
 
 class DetailView extends StatefulWidget {
   DetailView({this.id});
@@ -33,10 +34,7 @@ class _DetailViewState extends State<DetailView> {
         backgroundColor: Color(0xFFF2C6AD8), //main color
         body: SafeArea(
           child: (data != null)
-              ? Text(data.toString(),
-              style: TextStyle(
-                color: Colors.white,
-              ))
+              ? ExploreDetail(data: data)
               : Center(
             child: CircularProgressIndicator(
               backgroundColor: Colors.white,

@@ -1,8 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:foko/functions/database.dart';
 import 'package:foko/widgets/LoanTile.dart';
-
-final _firestore = Firestore.instance;
 
 class LoanList extends StatelessWidget {
   LoanList({this.nav});
@@ -11,7 +10,7 @@ class LoanList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(
-      stream: _firestore.collection('loans').snapshots(),
+      stream: LoanDB().allLoans(),
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
           return Center(
@@ -28,6 +27,7 @@ class LoanList extends StatelessWidget {
           final amount = loan.data['amount'];
           final installment = loan.data['installment'];
           final offer = loan.data['offer'];
+          final uid = loan.data['lendee'];
           final id = loan.documentID;
 
           final loanTile = LoanTile(
@@ -38,6 +38,7 @@ class LoanList extends StatelessWidget {
             offer: offer,
             id: id,
             nav: nav,
+            uid: uid,
           );
 
           loanList.add(loanTile);

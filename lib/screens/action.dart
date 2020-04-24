@@ -22,7 +22,7 @@ class LendingActionScreen extends StatelessWidget {
                   color:Color(0xFFF2C6AD8),
                   borderRadius: BorderRadius.all(Radius.circular(20.0),),
                 ),),),
-            Text('CONTRIBUTE TO THIS LOAN', style: TextStyle(
+            Text('CREATE NEW LOAN', style: TextStyle(
               fontSize: 16.0,
               fontFamily: 'Lato Light',
             ),),
@@ -40,7 +40,6 @@ class LendingActionScreen extends StatelessWidget {
                     children: <Widget>[
                       Text('FROM', style: TextStyle(fontFamily: 'Lato Bold'),),
                       CircleAvatar(),
-                      Text('@user', style: TextStyle(fontFamily: 'Lato Light'),),
                     ],
                   ),
                   Padding(
@@ -56,7 +55,6 @@ class LendingActionScreen extends StatelessWidget {
                     children: <Widget>[
                       Text('TO', style: TextStyle(fontFamily: 'Lato Bold'),),
                       CircleAvatar(),
-                      Text('@user', style: TextStyle(fontFamily: 'Lato Light'),),
                     ],
                   ),
                 ],

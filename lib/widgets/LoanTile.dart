@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:foko/widgets/UserAvatar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoanTile extends StatelessWidget {
 
-  LoanTile({this.id, this.title, this.amount, this.desc, this.installment, this.offer, this.nav});
+  LoanTile({this.id, this.uid, this.title, this.amount, this.desc, this.installment, this.offer, this.nav});
 
   final String id;
+  final String uid;
   final String title;
   final int amount;
   final String desc;
@@ -42,7 +44,7 @@ class LoanTile extends StatelessWidget {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    CircleAvatar(),
+                    UserAvatar(id: uid,),
                     SizedBox(width: 20.0,),
                     Container(
                       width: 180.0,

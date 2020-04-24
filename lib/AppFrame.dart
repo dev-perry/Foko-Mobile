@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:foko/utilities/bottom_navigation.dart';
 import 'package:foko/utilities/tab_navigator.dart';
+import 'package:provider/provider.dart';
+import 'package:foko/providers/navigation.dart';
 
 
 class AppFrame extends StatefulWidget {
@@ -29,22 +31,26 @@ class _AppFrameState extends State<AppFrame> {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async => !await navigatorKeys[currentTab].currentState.maybePop(),
-      child: Scaffold(
-        backgroundColor:(currentTab == TabItem.explore || currentTab == TabItem.activity) ? Color(0xFFF2C6AD8) : Colors.white,//main color
-        bottomNavigationBar: BottomNavigation(
-          currentTab: currentTab,
-          onSelectTab: _selectTab,
-        ),
-        body: Stack(
-          children: <Widget>[
-            _buildOffstageNavigator(TabItem.explore),
-            _buildOffstageNavigator(TabItem.activity),
-            _buildOffstageNavigator(TabItem.action),
-            _buildOffstageNavigator(TabItem.messages),
-            _buildOffstageNavigator(TabItem.account),
-          ],
+    return ChangeNotifierProvider(
+      create: (context) => Navigation(),
+      child: WillPopScope(
+        onWillPop: () async => !await navigatorKeys[currentTab].currentState.maybePop(),
+        child: Scaffold(
+          resizeToAvoidBottomInset: false,
+          backgroundColor:(currentTab == TabItem.explore || currentTab == TabItem.activity) ? Color(0xFFF2C6AD8) : Colors.white,//main color
+          bottomNavigationBar: BottomNavigation(
+            currentTab: currentTab,
+            onSelectTab: _selectTab,
+          ),
+          body: Stack(
+            children: <Widget>[
+              _buildOffstageNavigator(TabItem.explore),
+              _buildOffstageNavigator(TabItem.activity),
+              _buildOffstageNavigator(TabItem.action),
+              _buildOffstageNavigator(TabItem.messages),
+              _buildOffstageNavigator(TabItem.account),
+            ],
+          ),
         ),
       ),
     );

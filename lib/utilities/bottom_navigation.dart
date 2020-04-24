@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:foko/widgets/SpotButton.dart';
+import 'package:provider/provider.dart';
+import 'package:foko/providers/navigation.dart';
 
 enum TabItem {explore, activity, action, messages, account}
 
@@ -35,6 +37,13 @@ class BottomNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    void handleTap(TabItem tab){
+      onSelectTab(tab);
+      var pos = index[tab];
+      Provider.of<Navigation>(context, listen: false).updateView(pos);
+    }
+
     return BottomNavigationBar(
       elevation: 2.0,
       backgroundColor: Colors.white,
@@ -48,9 +57,9 @@ class BottomNavigation extends StatelessWidget {
         _buildItem(tabItem: TabItem.messages),
         _buildItem(tabItem: TabItem.account),
       ],
-      onTap: (index) => onSelectTab(
-        TabItem.values[index],
-      ),
+      onTap: (index){
+        handleTap(TabItem.values[index]);
+      }
     );
   }
 }
